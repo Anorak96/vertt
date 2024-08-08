@@ -14,7 +14,7 @@ const Product = () => {
 
     let getProduct = async () => {
         try {
-            let response = await fetch(`/api/product/${id}`)
+            let response = await fetch(`https://vertt.pythonanywhere.com/api/product/${id}`)
             if (!response.ok) {
                 if (response.status === 500) {
                     alert('Network Error!')
