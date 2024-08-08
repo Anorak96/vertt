@@ -14,7 +14,7 @@ const tag = () => {
 
     let getTag = async () => {
         try {
-            let response = await fetch(`/api/tag/${id}`)
+            let response = await fetch(`https://vertt.pythonanywhere.com/api/tag/${id}`)
             if (!response.ok) {
                 if (response.status === 500 ) {
                     alert('Network Error!')
@@ -35,7 +35,7 @@ const tag = () => {
 
     return (
         <Container fluid>
-            <img className='tag-image' src={`http://127.0.0.1:8000${tags.image}`} alt="" />
+            <img className='tag-image' src={`https://vertt.pythonanywhere.com${tags.image}`} alt="" />
             <div style={{ 'display': 'flex', 'justifyContent': 'center', 'position': 'relative', 'top': '-60px' }}>
                 <h3 style={{'backgroundColor':'white'}}>{tags.tag}</h3>
             </div>
