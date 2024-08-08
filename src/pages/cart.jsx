@@ -17,7 +17,7 @@ const cart = () => {
 
     let getCart = async () => {
         try {
-            let response = await fetch('/api/cart', {
+            let response = await fetch('https://vertt.pythonanywhere.com/api/cart', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${authTokens.access}`
