@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
     let [user, setUser] = useState(() => localStorage.getItem('authTokens') ? jwtDecode(localStorage.getItem('authTokens')) : null)
     let [loading, setLoading] = useState(true)
     let [uuser, setUuser] = useState(null)
-	let [validated, setValidated] = useState(false);
+    let [validated, setValidated] = useState(false);
 
     let getUser = async () => {
         try {
