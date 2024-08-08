@@ -7,7 +7,7 @@ const taglist = ({tag}) => {
         <>
             <Link to={`/api/tag/${tag.id}`}>
                 <Card className='productlist-card hover'>
-                    <Card.Img className='home-product-img' src={`http://127.0.0.1:8000${tag.image}`} variant='top' alt={tag.image} />
+                    <Card.Img className='home-product-img' src={`https://vertt.pythonanywhere.com/${tag.image}`} variant='top' alt={tag.image} />
                     <Card.Body style={{'padding': '5px'}}>
                         <Card.Title className='home-tag'>{tag?.tag}</Card.Title>
                         <ListGroup variant="flush">
