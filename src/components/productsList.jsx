@@ -15,7 +15,7 @@ const productsList = ({ product }) => {
         <Card className='productlist-card hover'>
             <Link to={`/api/product/${product.id}`}>
                 {product.images.length > 0 &&
-                    <Card.Img className='home-product-img' src={`http://127.0.0.1:8000${product.images[0].image}`} variant='top' alt={product.images[0].image} />
+                    <Card.Img className='home-product-img' src={`${product.images[0].image}`} variant='top' alt={product.images[0].image} />
                 }
             </Link>
             <Card.Body style={{'padding': '5px'}}>
