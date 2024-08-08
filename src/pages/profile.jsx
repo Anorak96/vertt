@@ -18,7 +18,7 @@ const profile = () => {
     
     let getAccount = async () => {
         try {
-            let response = await fetch('/api/account', {
+            let response = await fetch('https://vertt.pythonanywhere.com/api/account', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${authTokens.access}`
