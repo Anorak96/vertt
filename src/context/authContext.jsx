@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
 
     let getUser = async () => {
         try {
-            let response = fetch('/api/account', {
+            let response = fetch('https://vertt.pythonanywhere.com/api/account', {
                 headers: {
                     'Content-Type':'application/json',
                     'Authorization': `Bearer ${authTokens.access}`
@@ -39,7 +39,7 @@ export const AuthProvider = ({ children }) => {
 	
     let loginUser = async (e) => {
         e.preventDefault()
-        let response = await fetch('/api/account/token/', {
+        let response = await fetch('https://vertt.pythonanywhere.com/api/account/token/', {
             method: 'POST',
             headers: {
                 'Content-Type':'application/json'
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
 
     let updateToken = async () => {
         console.log('update token called!');
-        let response = await fetch('/api/account/token/refresh/', {
+        let response = await fetch('https://vertt.pythonanywhere.com/api/account/token/refresh/', {
             method: 'POST',
             headers: {
                 'Content-Type':'application/json'
