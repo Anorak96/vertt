@@ -19,7 +19,7 @@ const useCartAdd = () => {
 			setError(null)
 			setSuccess(null)
 			try {
-				let response = await fetch('/api/cart', {
+				let response = await fetch('https://vertt.pythonanywhere.com/api/cart', {
 					method: 'POST',
 					headers: {
 						'Content-Type': 'application/json',
