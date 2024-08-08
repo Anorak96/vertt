@@ -11,7 +11,7 @@ const categories = () => {
 
     let getCategories= async () => {
         try {
-            let response = await fetch('/api/category')
+            let response = await fetch('https://vertt.pythonanywhere.com/api/category')
             if (!response.ok) {
                 if (response.status === 500 ) {
                     alert('Network Error!')
@@ -35,7 +35,7 @@ const categories = () => {
                     return (
                         <Link to={`api/category/${category.id}`}>
                             <Card className='hover'>
-                                <Card.Img style={{'height': '200px','objectFit':'contain'}} src={`http://localhost:8000${category.image}`} variant='top' alt="" />
+                                <Card.Img style={{'height': '200px','objectFit':'contain'}} src={`https://vertt.pythonanywhere.com${category.image}`} variant='top' alt="" />
                                 <Card.Body style={{'padding': '5px'}}>
                                     <Card.Title className='home-category' style={{'display':'flex','justifyContent':'center'}}>{category.category}</Card.Title>
                                 </Card.Body>
