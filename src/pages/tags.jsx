@@ -21,7 +21,7 @@ const tags = () => {
     }, [])
 
     let getTags = async () => {
-        await fetch('/api/tag')
+        await fetch('https://vertt.pythonanywhere.com/api/tag')
             .then(response => response.json())
             .then(data => {
                 console.log(data)
