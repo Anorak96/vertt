@@ -18,7 +18,7 @@ const productdet = ({ product, suggested, delivery }) => {
             <Carousel data-bs-theme="dark" >
                 {product?.images.map((image, index) => (
                     <Carousel.Item>
-                        <img className="d-block product-detail-img" key={index} src={`http://127.0.0.1:8000${image.image}`} alt={product.name} />
+                        <img className="d-block product-detail-img" key={index} src={`https://vertt.pythonanywhere.com${image.image}`} alt={product.name} />
                     </Carousel.Item>
                 ))}
             </Carousel>
