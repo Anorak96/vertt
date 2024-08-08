@@ -1,0 +1,78 @@
+button {
+    background-color: #F5F5F5 !important;
+    color: #232323 !important;
+}
+.carousel-indicators {
+    display: none !important;
+}
+a {
+    text-decoration: none !important;
+    color: black !important;
+}
+.px-6 {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.mt-10{
+    margin-top: 10px !important;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.gray {
+    background-color: gray !important;
+}
+.yellow {
+    background-color: yellow;
+}
+.black {
+    background-color: black;
+}
+.bold {
+    font-weight: bold !important;
+}
+.flex-center {
+    display: flex !important;
+    justify-content: center !important;
+}
+.flex-space-between {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+.align-center {
+    align-items: center !important;
+}
+.border-bttom {
+    border-bottom: 1px solid black !important;
+}
+.block {
+    display: block !important;
+}
+.block-ruby {
+    display: block ruby !important;
+}
+.font-100 {
+    font-weight: 100;
+}
+.f-s-13 {
+    font-size: 13px;
+}
+.f-s-15 {
+    font-size: 15px;
+}
+.form-floating > .form-select {
+  line-height: 2.25 !important;
+}
+.form-select {
+    font-weight: 700 !important;
+}
+.form-select ~ label::after {
+    display: none !important;
+}
