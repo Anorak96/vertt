@@ -19,7 +19,7 @@ const buyer = ({ user }) => {
     
     let getBuyer = async () => {
         try {
-            let response = await fetch('/api/account', {
+            let response = await fetch('https://vertt.pythonanywhere.com/api/account', {
                 method: 'GET',
                 headers: {
                     'Authorization': `Bearer ${authTokens.access}`
@@ -54,7 +54,7 @@ const buyer = ({ user }) => {
                     </div>
                     <Row className='mt-3 px-4'>
                         <Col md={3} className='shadow p-3'>
-                            <img className='profile-img' src={`http://127.0.0.1:8000${user.profile_pic}`} alt="" />
+                            <img className='profile-img' src={`https://vertt.pythonanywhere.com${user.profile_pic}`} alt="" />
                             <h3 className='flex-center'>{user.first_name} {user.last_name}</h3>
                             <span className='flex-center profile-balance'><FaWallet />&nbsp;&nbsp;{user.balance }</span>
                         </Col>
