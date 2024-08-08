@@ -16,7 +16,7 @@ const home = () => {
     let getHome = async () => {
 	    console.log('Coming Home')
         try {
-        	let response = await fetch('/api/home')
+        	let response = await fetch('https://vertt.pythonanywhere.com/api/home')
 		    if (!response.ok) {
                 if (response.status === 500 ) {
                     alert('Network Error!')
