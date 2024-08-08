@@ -9,7 +9,7 @@ const cartList = ({ product }) => {
     let {user, authTokens} = useContext(AuthContext)
     
     let removeProduct = async () => {
-        let response = await fetch(`api/cart/${product.product.id}`, {
+        let response = await fetch(`https://vertt.pythonanywhere.com/api/cart/${product.product.id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -30,7 +30,7 @@ const cartList = ({ product }) => {
                     <Link to={`/api/product/${product.product.id}`}>
                         {product.product.images.length > 0 &&
                             <img className='cart-product-img' alt={product.product.name}
-                                src={`http://127.0.0.1:8000${product.product.images[0].image}`}  />
+                                src={`https://vertt.pythonanywhere.com${product.product.images[0].image}`}  />
                         }
                     </Link>
                 </td>
