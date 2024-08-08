@@ -35,7 +35,7 @@ const tag = () => {
 
     return (
         <Container fluid>
-            <img className='tag-image' src={`https://vertt.pythonanywhere.com${category.image}`} alt="" />
+            <img className='tag-image' src={`https://vertt.pythonanywhere.com/${category.image}`} alt="" />
             <div style={{ 'display': 'flex', 'justifyContent': 'center', 'position': 'relative', 'top': '-60px' }}>
                 <h3 style={{'backgroundColor':'white'}}>{category.category}</h3>
             </div>
